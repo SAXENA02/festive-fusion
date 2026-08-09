@@ -76,6 +76,11 @@ a{text-decoration:none;color:inherit}
 .price{font-size:18px;font-weight:900;color:var(--wine)}
 .add-btn{border:0;background:var(--wine);color:#fff;border-radius:8px;padding:9px 11px;font-size:12px;font-weight:800;cursor:pointer}
 .add-btn:hover{background:var(--deep)}
+.product-actions{display:flex;gap:6px;margin-top:9px}
+.product-actions .add-btn{flex:1;padding:9px 6px}
+.add-btn.full{width:100%}
+.flipkart-btn{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;background:#2874f0;color:#fff;border-radius:8px;padding:9px 6px;font-size:12px;font-weight:800}
+.flipkart-btn:hover{background:#1c5cd6}
 
 .about{background:#fff;border-top:1px solid #eee1e5;border-bottom:1px solid #eee1e5}
 .about-inner{max-width:1180px;margin:auto;padding:45px 22px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
@@ -122,6 +127,8 @@ a{text-decoration:none;color:inherit}
   .product-info h3{font-size:13px;min-height:36px}
   .price{font-size:15px}
   .add-btn{font-size:10px;padding:8px}
+  .product-actions{gap:5px}
+  .flipkart-btn{font-size:10px;padding:8px 4px}
   .about-inner{grid-template-columns:1fr;padding:35px 18px}
   .section h2,.about h2{font-size:31px}
 }
@@ -188,7 +195,7 @@ a{text-decoration:none;color:inherit}
     
     <article class="product-card" data-name="Photo Rakhi" data-price="₹100">
       <div class="product-image">
-        <img src="images/product-1.png" alt="Photo Rakhi" loading="lazy">
+        <img src="assets/photo-rakhi.webp" alt="Photo Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -197,14 +204,17 @@ a{text-decoration:none;color:inherit}
         <h3>Photo Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹100</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Photo Rakhi&#x27;, &#x27;₹100&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn" onclick="addToCart(&#x27;Photo Rakhi&#x27;, &#x27;₹100&#x27;)">🛒 Cart</button>
+          <a class="flipkart-btn" href="https://dl.flipkart.com/s/amPG9KuuuN" target="_blank" rel="noopener">Flipkart →</a>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Kundan Rakhi" data-price="₹40">
       <div class="product-image">
-        <img src="images/product-2.png" alt="Kundan Rakhi" loading="lazy">
+        <img src="assets/kundan-rakhi.webp" alt="Kundan Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -213,14 +223,16 @@ a{text-decoration:none;color:inherit}
         <h3>Kundan Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹40</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Kundan Rakhi&#x27;, &#x27;₹40&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Kundan Rakhi&#x27;, &#x27;₹40&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Evil Eye Beaded Rakhi" data-price="₹40">
       <div class="product-image">
-        <img src="images/product-3.png" alt="Evil Eye Beaded Rakhi" loading="lazy">
+        <img src="assets/evil-eye-beaded-rakhi.webp" alt="Evil Eye Beaded Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -229,14 +241,17 @@ a{text-decoration:none;color:inherit}
         <h3>Evil Eye Beaded Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹40</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Evil Eye Beaded Rakhi&#x27;, &#x27;₹40&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn" onclick="addToCart(&#x27;Evil Eye Beaded Rakhi&#x27;, &#x27;₹40&#x27;)">🛒 Cart</button>
+          <a class="flipkart-btn" href="https://dl.flipkart.com/s/amZxRouuuN" target="_blank" rel="noopener">Flipkart →</a>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Kundan Bhaiya &amp;amp; Bhabhi Rakhi" data-price="₹80">
       <div class="product-image">
-        <img src="images/product-4.png" alt="Kundan Bhaiya &amp;amp; Bhabhi Rakhi" loading="lazy">
+        <img src="assets/kundan-bhaiya-bhabhi-rakhi.webp" alt="Kundan Bhaiya &amp;amp; Bhabhi Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -245,14 +260,17 @@ a{text-decoration:none;color:inherit}
         <h3>Kundan Bhaiya &amp;amp; Bhabhi Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹80</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Kundan Bhaiya &amp;amp; Bhabhi Rakhi&#x27;, &#x27;₹80&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn" onclick="addToCart(&#x27;Kundan Bhaiya &amp;amp; Bhabhi Rakhi&#x27;, &#x27;₹80&#x27;)">🛒 Cart</button>
+          <a class="flipkart-btn" href="https://dl.flipkart.com/s/OSQBs_NNNN" target="_blank" rel="noopener">Flipkart →</a>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Watch Rakhi" data-price="₹350">
       <div class="product-image">
-        <img src="images/product-5.png" alt="Watch Rakhi" loading="lazy">
+        <img src="assets/watch-rakhi.webp" alt="Watch Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -261,7 +279,9 @@ a{text-decoration:none;color:inherit}
         <h3>Watch Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹350</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Watch Rakhi&#x27;, &#x27;₹350&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Watch Rakhi&#x27;, &#x27;₹350&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
@@ -277,14 +297,17 @@ a{text-decoration:none;color:inherit}
         <h3>Beads Rakhi – Pack of 3</h3>
         <div class="product-bottom">
           <span class="price">₹25</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Beads Rakhi – Pack of 3&#x27;, &#x27;₹25&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn" onclick="addToCart(&#x27;Beads Rakhi – Pack of 3&#x27;, &#x27;₹25&#x27;)">🛒 Cart</button>
+          <a class="flipkart-btn" href="https://dl.flipkart.com/s/OSvszdNNNN" target="_blank" rel="noopener">Flipkart →</a>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Evil Eye Rakhi – Blue" data-price="₹20">
       <div class="product-image">
-        <img src="images/product-6.png" alt="Evil Eye Rakhi – Blue" loading="lazy">
+        <img src="assets/evil-eye-rakhi-blue.webp" alt="Evil Eye Rakhi – Blue" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -293,14 +316,16 @@ a{text-decoration:none;color:inherit}
         <h3>Evil Eye Rakhi – Blue</h3>
         <div class="product-bottom">
           <span class="price">₹20</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Evil Eye Rakhi – Blue&#x27;, &#x27;₹20&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Evil Eye Rakhi – Blue&#x27;, &#x27;₹20&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Red Kundan Bracelet" data-price="₹60">
       <div class="product-image">
-        <img src="images/product-2.png" alt="Red Kundan Bracelet" loading="lazy">
+        <img src="assets/red-kundan-bracelet.webp" alt="Red Kundan Bracelet" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -309,14 +334,16 @@ a{text-decoration:none;color:inherit}
         <h3>Red Kundan Bracelet</h3>
         <div class="product-bottom">
           <span class="price">₹60</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Red Kundan Bracelet&#x27;, &#x27;₹60&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Red Kundan Bracelet&#x27;, &#x27;₹60&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Red Bracelet" data-price="₹50">
       <div class="product-image">
-        <img src="images/product-7.png" alt="Red Bracelet" loading="lazy">
+        <img src="assets/red-bracelet.webp" alt="Red Bracelet" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -325,14 +352,16 @@ a{text-decoration:none;color:inherit}
         <h3>Red Bracelet</h3>
         <div class="product-bottom">
           <span class="price">₹50</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Red Bracelet&#x27;, &#x27;₹50&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Red Bracelet&#x27;, &#x27;₹50&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Green Bracelet" data-price="₹40">
       <div class="product-image">
-        <img src="images/product-8.png" alt="Green Bracelet" loading="lazy">
+        <img src="assets/green-bracelet.webp" alt="Green Bracelet" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -341,14 +370,16 @@ a{text-decoration:none;color:inherit}
         <h3>Green Bracelet</h3>
         <div class="product-bottom">
           <span class="price">₹40</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Green Bracelet&#x27;, &#x27;₹40&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Green Bracelet&#x27;, &#x27;₹40&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Watch Rakhi – New Design" data-price="₹350">
       <div class="product-image">
-        <img src="images/product-9.png" alt="Watch Rakhi – New Design" loading="lazy">
+        <img src="assets/watch-rakhi-new-design.webp" alt="Watch Rakhi – New Design" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -357,14 +388,16 @@ a{text-decoration:none;color:inherit}
         <h3>Watch Rakhi – New Design</h3>
         <div class="product-bottom">
           <span class="price">₹350</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Watch Rakhi – New Design&#x27;, &#x27;₹350&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Watch Rakhi – New Design&#x27;, &#x27;₹350&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Beaded Rakhi" data-price="₹10">
       <div class="product-image">
-        <img src="images/product-10.png" alt="Beaded Rakhi" loading="lazy">
+        <img src="assets/beaded-rakhi.webp" alt="Beaded Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -373,14 +406,16 @@ a{text-decoration:none;color:inherit}
         <h3>Beaded Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹10</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Beaded Rakhi&#x27;, &#x27;₹10&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Beaded Rakhi&#x27;, &#x27;₹10&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Caring Wali Rakhi" data-price="₹20">
       <div class="product-image">
-        <img src="images/product-11.png" alt="Caring Wali Rakhi" loading="lazy">
+        <img src="assets/caring-wali-rakhi.webp" alt="Caring Wali Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -389,14 +424,16 @@ a{text-decoration:none;color:inherit}
         <h3>Caring Wali Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹20</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Caring Wali Rakhi&#x27;, &#x27;₹20&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Caring Wali Rakhi&#x27;, &#x27;₹20&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Evil Eye Rakhi" data-price="₹20">
       <div class="product-image">
-        <img src="images/product-6.png" alt="Evil Eye Rakhi" loading="lazy">
+        <img src="assets/evil-eye-rakhi.webp" alt="Evil Eye Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -405,14 +442,16 @@ a{text-decoration:none;color:inherit}
         <h3>Evil Eye Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹20</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Evil Eye Rakhi&#x27;, &#x27;₹20&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Evil Eye Rakhi&#x27;, &#x27;₹20&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
     
     <article class="product-card" data-name="Bracelet Kundan Rakhi" data-price="₹50">
       <div class="product-image">
-        <img src="images/product-7.png" alt="Bracelet Kundan Rakhi" loading="lazy">
+        <img src="assets/bracelet-kundan-rakhi.webp" alt="Bracelet Kundan Rakhi" loading="lazy">
         <button class="heart" onclick="toggleLike(this)" aria-label="Like product">♡</button>
         <span class="badge">NEW</span>
       </div>
@@ -421,7 +460,9 @@ a{text-decoration:none;color:inherit}
         <h3>Bracelet Kundan Rakhi</h3>
         <div class="product-bottom">
           <span class="price">₹50</span>
-          <button class="add-btn" onclick="addToCart(&#x27;Bracelet Kundan Rakhi&#x27;, &#x27;₹50&#x27;)">Add to Cart</button>
+          </div>
+        <div class="product-actions">
+          <button class="add-btn full" onclick="addToCart(&#x27;Bracelet Kundan Rakhi&#x27;, &#x27;₹50&#x27;)">Add to Cart</button>
         </div>
       </div>
     </article>
